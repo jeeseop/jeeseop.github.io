@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Yoonchang Sung </title>
+<!-- MathJax -->
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body style="width: 70%">
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">menu</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="research.html" class="current">Research</a></div>
+<div class="menu-item"><a href="pub.html">Publication</a></div>
+<div class="menu-item"><a href="rep_pub.html">Representative Papers</a></div>
+<div class="menu-item"><a href="yoon_cv.pdf">CV</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Yoonchang Sung </h1>
+</div>
+<h2>Research Statement</h2>
+<p>My research interests lie in developing algorithms for distributed planning, learning and making decisions under uncertainty that give provable guarantees. Particularly, I am interested in multi-robot coordination algorithms that address challenges that may come from hardware constraints (such as sensing and communication limitations). Some of the highlighted works are as follows: (1) Tracking an unknown and varying number of targets for search and rescue by exploiting the random finite set theory; (2) Developing distributed approximation algorithms (<i>i.e.</i>, local and greedy) for multi-robot multi-target tracking that give theoretical bounds on the number of communication rounds; (3) Proposing a competitive online algorithm (with respect to the offline optimal solution) for multi-robot exploration of an unknown hazardous plume; and (4) Coordinating between the UAV and a robotic boat to sequentially decide where to collect water samples, given a limited budget, that may contain hazardous agents in a lake. I have implemented the proposed algorithms on mobile robots and the UAVs using ROS, interfaced with onboard cameras, and verified the performance of algorithms by carrying out field experiments over the ground and a lake.
+</p>
+
+<h2>Online Multi-Robot Exploration of a Translating Plume of Unknown Size and Shape</h2>
+<img src="photos/quad_plume_at_quarry.png" width="290"></img>
+<br>
+<iframe width="410" height="230" src="https://www.youtube.com/embed/tfzz6i0i5Dc?autoplay=0&loop=0&playlist=tfzz6i0i5Dc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <iframe width="410" height="230" src="https://www.youtube.com/embed/xtQ6j21KTOI?autoplay=0&loop=0&playlist=xtQ6j21KTOI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- 430*242 -->
+<br>
+<p>In this work, we study the problem of exploring a translating plume with a team of aerial robots. The shape and the size of the plume are unknown to the robots. The objective is to find a tour for each robot such that they collectively explore the plume. Specifically, the tours must be such that each point in the plume must be visible from the field-of-view of some robot along its tour. We propose a recursive Depth-First Search (DFS)-based algorithm that yields a constant competitive ratio for the exploration problem. The competitive ratio is \(\frac{2(S_r+S_p)(R+\lfloor\log R\rfloor)}{(S_r−S_p)(1+\lfloor\log R\rfloor)}\) where \(R\) is the number of robots, and \(S_r\) and \(S_p\) are the robot speed and the plume speed, respectively. We also consider a more realistic scenario where the plume shape is not restricted to grid cells but an arbitrary shape. We show our algorithm has \(\frac{2(S_r+S_p)(18R+\lfloor\log R\rfloor)}{(S_r−S_p)(1+\lfloor\log R\rfloor)}\) competitive ratio under the fat condition. We empirically verify our algorithm using simulations.
+<br />[<a href="pub/plume-icra-2019.pdf" target=&ldquo;blank&rdquo;><i>Paper</i></a>]<!--[<a href="https://youtu.be/xfMZloeKo6c" target=&ldquo;blank&rdquo;>Video</a>]--></p>
+
+<h2>Multi-Robot Multi-Target Tracking under Limited Bandwidth</h2>
+<img src="photos/problem_description.png" width="330"></img>
+<br>
+<iframe width="410" height="230" src="https://www.youtube.com/embed/Rf8U6JuJVIs?autoplay=0&loop=0&playlist=Rf8U6JuJVIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <iframe width="410" height="230" src="https://www.youtube.com/embed/725_97mbcTU?autoplay=0&loop=0&playlist=725_97mbcTU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<br>
+<!--<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Greedy algorithm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Local algorithm </p>-->
+<p>We study two multi-robot assignment problems for multi-target tracking. We consider distributed approaches in order to deal with limited sensing and communication ranges. We seek to simultaneously assign trajectories and targets to the robots. Our focus is on local algorithms that achieve performance close to the optimal algorithms with limited communication. We show how to use a local algorithm that guarantees a bounded approximate solution within \(\mathcal{O}(h\log 1/\epsilon)\) communication rounds. We compare with a greedy approach that achieves a 2–approximation in as many rounds as the number of robots. Simulation results show that the local algorithm is an effective solution to the assignment problem.
+<br />[<a href="pub/sata-icra-2018.pdf" target=&ldquo;blank&rdquo;><i>Paper</i></a>]<!--[<a href="https://youtu.be/xfMZloeKo6c" target=&ldquo;blank&rdquo;>Video</a>]--></p>
+
+<h2>Tracking an Unknown and Varying Number of Targets</h2>
+<!--<img src="photos/intro_gm_phd.png" width="185"></img><img src="photos/field_environment.png" width="315"></img><img src="photos/exp_robot_trajectory.png" width="220"></img>-->
+<iframe width="410" height="230" src="https://www.youtube.com/embed/t65ZhdNjswY?autoplay=0&loop=0&playlist=t65ZhdNjswY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <iframe width="410" height="230" src="https://www.youtube.com/embed/yY8lkor-7no?autoplay=0&loop=0&playlist=yY8lkor-7no" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<br>
+<p>We study the problem of searching and tracking a collection of moving targets using a robot with a limited Field-Of-View (FOV) sensor. The actual number of targets present in the environment is not known a priori. We propose a search and tracking framework based on the concept of Bayesian Random Finite Sets (RFSs). Specifically, we generalize the Gaussian Mixture Probability Hypothesis Density (GM-PHD) filter which was previously applied for only tracking problems to allow for simultaneous search and tracking. The proposed framework can extract individual target tracks as well as estimate the number and spatial density of the targets. We also show how to use Gaussian Process (GP) regression to extract and predict nonlinear target trajectories in this framework. We demonstrate the efficacy of our techniques through representative simulations where we also compare the performance of two active control strategies.
+<br />[<a href="pub/fire-icra-2017.pdf" target=&ldquo;blank&rdquo;><i>Paper</i></a>]<!--[<a href="https://youtu.be/6AitinwNWC4" target=&ldquo;blank&rdquo;>Video</a>]--></p>
+
+<h2>Human Following using a Hierarchical Data Association</h2>
+
+<iframe width="450" height="253" src="https://www.youtube.com/embed/bGZpcfnybRw?autoplay=0&loop=0&playlist=bGZpcfnybRw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- 450*253 -->
+<br>
+<!--<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Add to IFRAME </p>
+<br>-->
+
+<p>Human-following in a cluttered environment is one of the challenging issues for mobile service robot applications. Since a laser range finder (LRF) is commonly installed for autonomous navigation, it is advantageous to adopt an LRF for detection and tracking humans. In this work, we aim at the reliable human tracking performances in a dynamic cluttered environment. The key idea is to develop a hierarchical sample-based joint probabilistic data association filter (HSJPDAF) by focusing on the leg positions as well as human positions. The proposed HSJPDAF consists of two levels in order to consider the interdependence between targets. Possible locations of multiple human targets can be simultaneously estimated on the basis of Bayesian filtering. Comparison with the general technique was carried out to verify the performance of HSJPDAF in both artificial indoor and real-world environments. Owing to the hierarchical framework, the proposed method shows the improved robustness by reducing the target loss rate significantly in a dynamic cluttered environment.
+<br />[<a href="pub/sjpdaf-thms-2016.pdf" target=&ldquo;blank&rdquo;><i>Paper</i></a>]<!--[<a href="https://youtu.be/CjUWeuvQ5lQ" target=&ldquo;blank&rdquo;>Video</a>]--></p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2019-01-26, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
