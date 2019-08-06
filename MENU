@@ -1,8 +1,8 @@
 menu
     Home                [index.html]
-    Research			      [research.html]
-	  Publication         [pub.html]
-	  CV					        [jeeseop_cv.pdf]
+    Research			[research.html]
+	Publication         [pub.html]
+	CV					[jeeseop_cv.pdf]
 #	Teaching			[teaching.html]
 #	Courses				[courses.html]
 #    Activities			[activities.html]
