@@ -1,5 +1,5 @@
 menu
-    Home                [page_index.html]
+    Home                [index.html]
     Research			[page_research.html]
 	Publications         [page_pub_journal_conf.html]
 	CV					[jeeseop_cv.pdf]
