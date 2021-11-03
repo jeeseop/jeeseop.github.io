@@ -41,11 +41,16 @@ MathJax.Hub.Config({
 <h2>Cooperative Locomotion via Supervisory MPC and Distributed Nonlinear Controllers [<a href="https://doi.org/10.1115/1.4052917" target="blank"><i>DOI</i></a>]</h2>
 <div style="width:95%;">
 <div style="width: 50 %; height: 100%; float: left;">
+<br>
 <iframe width="340" height="200" src="https://www.youtube.com/embed/8G1tniNW7jg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div style="margin-left: 35%; height: 250px;">
 <br>
-<p> Cooperative Locomotion via supervisory MPC and distributed nonlinear controllers  <!--[<a href="pub/ral_2020_arxiv_ver.pdf" target="blank"><i>Paper</i></a>]</p>-->
+<p> An innovative network of reduced-order models subject to holonomic constraints, referred to as interconnected linear inverted pendulum (LIP) dynamics, is presented to study cooperative locomotion. 
+The higher level of the proposed algorithm employs a supervisory controller, based on event-based model predictive control (MPC), to effectively compute the optimal reduced-order trajectories for the interconnected LIP dynamics. 
+The lower level of the proposed algorithm employs distributed nonlinear controllers to reduce the gap between reduced- and full-order complex models of cooperative locomotion. 
+In particular, the distributed controllers are developed based on quadratic programming (QP) and virtual constraints to impose the full-order dynamical models of each agent to asymptotically track the reduced-order trajectories while having feasible contact forces at the leg ends. 
+<!--[<a href="pub/ral_2020_arxiv_ver.pdf" target="blank"><i>Paper</i></a>]</p>-->
 </div>
 </div>
 
@@ -53,11 +58,15 @@ MathJax.Hub.Config({
 <h2>Quadrupedal Locomotion with Articulated Tails [<a href="https://doi.org/10.1115/1.4049555" target="blank"><i>DOI</i></a>]</h2>
 <div style="width:95%;">
 <div style="width: 50 %; height: 100%; float: left;">
+<br>
 <iframe width="340" height="200" src="https://www.youtube.com/embed/Bi7Zec66nbA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div style="margin-left: 35%; height: 250px;">
 <br>
-<p> Nonlinear Control for Quadrupedal Locomotion with Articulated Tails  <!--[<a href="pub/ral_2020_arxiv_ver.pdf" target="blank"><i>Paper</i></a>]</p>-->
+<p> We present a hierarchical control scheme in which a high-level and real-time path planner, based on an event-based model predictive control (MPC), computes the optimal motion of the center of mass (COM) and tail trajectories. 
+The MPC framework is developed for an innovative reduced-order linear inverted pendulum (LIP) model that is augmented with the tail dynamics. 
+At the lower level of the control scheme, a nonlinear controller is implemented through the use of quadratic programming (QP) and virtual constraints to force the full-order dynamical model to track the prescribed optimal trajectories of the COM and tail. 
+<!--[<a href="pub/ral_2020_arxiv_ver.pdf" target="blank"><i>Paper</i></a>]</p>-->
 </div>
 </div>
 
@@ -66,17 +75,21 @@ MathJax.Hub.Config({
 <h2> Hierarchical Controller for Robust Quadrupedal Locomotion [<a href="https://doi.org/10.1109/LRA.2020.3001471" target="blank"><i>DOI</i></a>] [<a href="pub/ral_2020_arxiv_ver.pdf" target="blank"><i>Paper</i></a>]</h2>
 <div style="width:95%;">
 <div style="width: 50 %; height: 100%; float: left;">
+<br>
 <iframe width="340" height="200" src="https://www.youtube.com/embed/rfuPbzmJfLM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div style="margin-left: 35%; height: 250px;">
 <br>
-<p> Event-Based Predictive Control for high level controller and QP-Based Virtual Constraints for low level controller </p>
+<p> The higher level of the proposed control scheme is developed based on an event-based MPC that computes the optimal center of mass (COM) trajectories for a reduced-order linear inverted pendulum (LIP) model subject to the feasibility of the net ground reaction force (GRF). 
+The asymptotic stability of a desired target point for the reduced-order model under the event-based MPC approach is investigated. 
+It is shown that the event-based nature of the proposed MPC approach can significantly reduce the computational burden associated with the real-time implementation of MPC techniques. 
+To bridge the gap between reduced- and full-order models, QP-based virtual constraint controllers are developed at the lower level of the proposed control scheme to impose the full-order dynamics to track the optimal trajectories while having all individual GRFs in the friction cone.</p>
 </div>
 </div>
 
 
 
-<h2>Joint Elasticity Compensation for Walking Stability [<a href="https://doi.org/10.1109/10.1109/HUMANOIDS.2016.7803250" target="blank"><i>DOI</i></a>] [<a href="pub/ichr_2016.pdf" target="blank"><i>Paper</i></a>]</h2>
+<h2>Joint Elasticity Compensation for Walking Stability [<a href="https://doi.org/10.1109/HUMANOIDS.2016.7803250" target="blank"><i>DOI</i></a>] [<a href="pub/ichr_2016.pdf" target="blank"><i>Paper</i></a>]</h2>
 <div style="width: 95%; ">
 <div style="width: 50 %; height: 100%; float: left;">
 <br>
@@ -84,7 +97,11 @@ MathJax.Hub.Config({
 </div>
 <div style="margin-left: 35%; height: 250px;">
 <br>
-<p>joint elasticity compensation </p>
+<p>The actuators in humanoid robots inevitably have compliance in their joint mechanisms. 
+The joint elasticity often negatively affects static and dynamic performance of the robot. 
+In the specific case of humanoid walking, the elasticity in the actuators can create problems not only on the performance but also on the stability, which is most critical for walking. 
+We modeled the joint deformation and proposed its compensation method to improve walking control performance and stability. 
+The proposed algorithm is implemented on our humanoid robot and its performance is demonstrated by improved stability of walking.</p>
 </div>
 </div>
 
