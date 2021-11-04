@@ -365,3 +365,39 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+/* added by me for better shaping*/
+p.professonal_para { 
+	text-indent: 15px;
+	
+	/*border: 1px solid #111;*/
+
+	word-break: break-word;
+	/*word-break: break-all; */
+	
+	/*hyphens works with <html lang="en"> in html file*/
+	/*ms edge doesnt show hyphens*/
+	/*-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;*/ 
+}
+
+div.vid_w_txt {
+	width:95%; 
+	min-height: 250px; 
+	height:auto;
+}
+
+div.vid_youtube {
+	width: 340px; 
+	min-height: 250px; 
+	height: auto; 
+	float: left;
+}
+
+div.txt_next_vid{
+	margin-left: 360px; 
+	min-width: 600px; 
+	min-height: 250px; 
+	height: auto;
+}
