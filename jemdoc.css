@@ -368,7 +368,7 @@ table.imgtable, table.imgtable td {
 
 /* added by me for better shaping*/
 /* .name: way to define the class*/
-/* I don't know why paragraph styling doesnt work after pushing on github*/
+/* CAUTION: DO NOT PUT ANY SPACES BETWEEN LINES EVEN THOUGH THAT IS COMMENTS*/
 .indent-para { 
 	text-indent: 15px;
 	word-break: break-word;
