@@ -368,20 +368,18 @@ table.imgtable, table.imgtable td {
 
 /* added by me for better shaping*/
 /* .name: way to define the class*/
+/* I don't know why paragraph styling doesnt work after pushing on github*/
 .indent-para { 
 	text-indent: 15px;
-	
-	/*border: 1px solid #111;*/
-
 	word-break: break-word;
+}
 	/*word-break: break-all; */
-	
 	/*hyphens works with <html lang="en"> in html file*/
 	/*ms edge doesnt show hyphens*/
 	/*-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;*/ 
-}
+	/*border: 1px solid #111;*/
 
 div.vid-w-txt {
 	width:95%; 
