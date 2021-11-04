@@ -376,9 +376,16 @@ table.imgtable, table.imgtable td {
 /* added by me for better shaping*/
 /* .name: way to define the class*/
 /* CAUTION: DO NOT PUT ANY SPACES BETWEEN LINES EVEN THOUGH THAT IS COMMENTS*/
+.normal-para { 
+	word-break: break-word;
+	line-height: 1.5;
+}
+
+
 .indent-para { 
 	text-indent: 15px;
 	word-break: break-word;
+	line-height: 1.5;
 }
 	/*word-break: break-all; */
 	/*hyphens works with <html lang="en"> in html file*/
@@ -389,7 +396,7 @@ table.imgtable, table.imgtable td {
 	/*border: 1px solid #111;*/
 
 .dateinfo::after{
-	content:"2021-11-03";
+	content:"2021-11-04";
 }
 
 /*.dateinfo::before{
