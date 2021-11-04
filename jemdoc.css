@@ -381,6 +381,14 @@ table.imgtable, table.imgtable td {
 	hyphens: auto;*/ 
 	/*border: 1px solid #111;*/
 
+.dateinfo::after{
+	content:"2021-11-03"
+}
+
+/*.dateinfo::before{
+	content:"2021-11-03"
+}*/
+
 div.vid-w-txt {
 	width:95%; 
 	min-height: 250px; 
