@@ -367,7 +367,7 @@ table.imgtable, table.imgtable td {
 }
 
 /* added by me for better shaping*/
-p.professonal-para { 
+.professonal-para { 
 	text-indent: 15px;
 	
 	/*border: 1px solid #111;*/
