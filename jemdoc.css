@@ -382,7 +382,7 @@ table.imgtable, table.imgtable td {
 	/*border: 1px solid #111;*/
 
 .dateinfo::after{
-	content:"2021-11-03"
+	content:"2021-11-03";
 }
 
 /*.dateinfo::before{
