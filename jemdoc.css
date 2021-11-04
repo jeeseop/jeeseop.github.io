@@ -368,7 +368,7 @@ table.imgtable, table.imgtable td {
 
 /* added by me for better shaping*/
 /* .name: way to define the class*/
-.professional_para { 
+.professional-para { 
 	text-indent: 15px;
 	
 	/*border: 1px solid #111;*/
@@ -383,20 +383,20 @@ table.imgtable, table.imgtable td {
 	hyphens: auto;*/ 
 }
 
-div.vid_w_txt {
+div.vid-w-txt {
 	width:95%; 
 	min-height: 250px; 
 	height:auto;
 }
 
-div.vid_youtube {
+div.vid-youtube {
 	width: 340px; 
 	min-height: 250px; 
 	height: auto; 
 	float: left;
 }
 
-div.txt_next_vid{
+div.txt-next-vid{
 	margin-left: 360px; 
 	min-width: 600px; 
 	min-height: 250px; 
