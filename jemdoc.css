@@ -383,6 +383,7 @@ table.imgtable, table.imgtable td {
 .normal-para { 
 	word-break: break-word;
 	line-height: 1.5;
+	min-width: 550px;
 }
 
 
@@ -408,7 +409,7 @@ table.imgtable, table.imgtable td {
 }*/
 
 div.vid-w-txt {
-	width:95%; 
+	width:100%; 
 	min-height: 250px; 
 	height:auto;
 }
@@ -422,7 +423,7 @@ div.vid-youtube {
 
 div.txt-next-vid{
 	margin-left: 360px; 
-	min-width: 600px; 
+	min-width: 550px; 
 	min-height: 250px; 
 	height: auto;
 }
