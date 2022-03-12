@@ -21,13 +21,14 @@ body {
 }
 
 #layout-menu {
-	background: #f6f6f6;
+	/*background: #f6f6f6;*/
+	background: #E5E1E6;
 	border: 1px solid #dddddd;
 	padding-top: 0.5em;
 	padding-left: 8px;
 	padding-right: 8px;
-	font-size: 1.0em;
-	width: auto;
+	font-size: 1.0em; /*1.0em;*/
+	width: 135px; /*auto;*/
 	white-space: nowrap;
     text-align: left;
     vertical-align: top;
@@ -63,7 +64,8 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #224b8d;
+	/*color: #224b8d;*/
+	color: #003C71;
 	text-decoration: none;
 }
 
@@ -124,7 +126,8 @@ strong {
 
 
 h1, h2, h3 {
-	color: #527bbd;
+	/*color: #527bbd;*/
+	color: #003c71;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
@@ -257,7 +260,8 @@ div.blockcontent {
 }
 
 div.infoblock > div.blockcontent {
-	background: #ffffee;
+	/*background: #ffffee;*/
+	background: #f0f4ff;
 }
 
 div.blockcontent p + ul, div.blockcontent p + ol {
@@ -396,7 +400,7 @@ table.imgtable, table.imgtable td {
 	/*border: 1px solid #111;*/
 
 .dateinfo::after{
-	content:"2022-03-10";
+	content:"2022-03-11";
 }
 
 /*.dateinfo::before{
