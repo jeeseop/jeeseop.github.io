@@ -29,6 +29,7 @@ body {
 	padding-right: 8px;
 	font-size: 1.0em; /*1.0em;*/
 	width: 135px; /*auto;*/
+	min-width: 120px;
 	white-space: nowrap;
     text-align: left;
     vertical-align: top;
@@ -401,7 +402,7 @@ table.imgtable, table.imgtable td {
 	/*border: 1px solid #111;*/
 
 .dateinfo::after{
-	content:"2022-03-11";
+	content:"2022-03-12";
 }
 
 /*.dateinfo::before{
