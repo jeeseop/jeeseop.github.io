@@ -86,10 +86,6 @@ a:hover {
 	text-decoration: none;
 }
 
-ul.menu-item{
-	font-size: 90%;
-}
-
 div.menu-category {
 	border-bottom: 1px solid gray;
 	margin-top: 0.8em;
@@ -216,8 +212,17 @@ ul {
 	/*list-style-type: square;*/
 	/*list-style-type: circle;*/
 	list-style-type: disc;
+}
+
+ul.menu-item{
+	/* decrease text of the sublist under menu*/
+	font-size: 90%;
 	/* decrease margins for the sublist under menu*/
-	margin-left: -1em;
+	margin-left: -1.5em;
+}
+
+ul.menu-item li{
+	padding-left: 5px;
 }
 
 p + ul, p + ol {
