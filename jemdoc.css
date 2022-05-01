@@ -26,10 +26,10 @@ body {
 	border: 1px solid #dddddd;
 	padding-top: 0.5em;
 	padding-left: 8px;
-	padding-right: 8px;
+	padding-right: 40px;
 	font-size: 1.0em; /*1.0em;*/
-	width: 135px; /*auto;*/
-	min-width: 120px;
+	width: auto; /*135px;*/ /*auto;*/
+	min-width: 170px;
 	white-space: nowrap;
     text-align: left;
     vertical-align: top;
@@ -84,6 +84,10 @@ a:hover {
 }
 #layout-menu a:hover {
 	text-decoration: none;
+}
+
+ul.menu-item{
+	font-size: 90%;
 }
 
 div.menu-category {
@@ -209,7 +213,11 @@ dd > *:first-child {
 
 ul {
 	list-style-position: outside;
-	list-style-type: square;
+	/*list-style-type: square;*/
+	/*list-style-type: circle;*/
+	list-style-type: disc;
+	/* decrease margins for the sublist under menu*/
+	margin-left: -1em;
 }
 
 p + ul, p + ol {
@@ -402,7 +410,7 @@ table.imgtable, table.imgtable td {
 	/*border: 1px solid #111;*/
 
 .dateinfo::after{
-	content:"2022-04-14";
+	content:"2022-05-01";
 }
 
 /*.dateinfo::before{
@@ -428,3 +436,65 @@ div.txt-next-vid{
 	min-height: 250px; 
 	height: auto;
 }
+
+
+/* added css for tagging */
+
+.tags {
+	list-style: none;
+	margin: 0;
+	overflow: hidden; 
+	padding: 0;
+  }
+  
+  .tags li {
+	float: left; 
+  }
+  
+  .tag {
+	background: #eee;
+	border-radius: 3px 0 0 3px;
+	color: #999;
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	padding: 0 20px 0 23px;
+	position: relative;
+	margin: 0 10px 10px 0;
+	text-decoration: none;
+	-webkit-transition: color 0.2s;
+  }
+  
+  .tag::before {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+	content: '';
+	height: 6px;
+	left: 10px;
+	position: absolute;
+	width: 6px;
+	top: 10px;
+  }
+  
+  .tag::after {
+	background: #fff;
+	border-bottom: 13px solid transparent;
+	border-left: 10px solid #eee;
+	border-top: 13px solid transparent;
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+  }
+  
+  .tag:hover {
+	/*background-color: crimson;*/
+	background-color: rgb(23, 20, 220);
+	color: white;
+  }
+  
+  .tag:hover::after {
+	 /*border-left-color: crimson; */
+	 border-left-color: rgb(23, 20, 220);
+  }

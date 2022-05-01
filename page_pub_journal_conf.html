@@ -17,19 +17,17 @@ MathJax.Hub.Config({
 </script>
 <!-- End MathJax -->
 <script type="text/javascript">
-<!--
 // Toggle Display of BibTeX
-function toggleBibtex(articleid) {
-	var bib = document.getElementById('bib_'+articleid);
-	if (bib) {
-		if(bib.className.indexOf('bibtex') != -1) {
-		bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
-		}
-	} else {
-		return;
-	}
-}
--->
+// function toggleBibtex(articleid) {
+// 	var bib = document.getElementById('bib_'+articleid);
+// 	if (bib) {
+// 		if(bib.className.indexOf('bibtex') != -1) {
+// 		bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
+// 		}
+// 	} else {
+// 		return;
+// 	}
+// }
 </script>
 </head>
 <body style="width: 70%">
@@ -39,7 +37,19 @@ function toggleBibtex(articleid) {
 <div class="menu-category">menu</div>
 <div class="menu-item"><a href="index.html">Home</a></div>
 <div class="menu-item"><a href="page_research.html">Research</a></div>
-<div class="menu-item"><a href="page_pub_journal_conf.html" class="current">Publications</a></div>
+<div class="menu-item"><a href="page_pub_journal_conf.html" class="current">Publications</a>
+  <ul class="menu-item">
+    <li>
+      <a href="#journal">Journal Article</a>
+    </li>
+    <li>
+      <a href="#conference">Conference Proceeding</a>
+    </li>
+    <li>
+      <a href="#thesis">Thesis and Dissertation</a>
+    </li>
+  </ul>
+</div>
 <!--<div class="menu-item"><a href="rep_pub.html">Representative Papers</a></div>-->
 <div class="menu-item"><a href="jeeseop_cv.pdf">CV</a></div>
 </td>
@@ -49,7 +59,7 @@ function toggleBibtex(articleid) {
 </div>
 
 
-
+<div id="journal">
 <h1>Peer-reviewed Journal</h1>
 <p class="normal-para">
 <ol>
@@ -85,11 +95,11 @@ function toggleBibtex(articleid) {
   </li>
 </ol>
 </p>
+</div>
 
 
 
-
-
+<div id="conference">
 <h1>Peer-reviewed Conference</h1>
 <p class="normal-para">
 <ol>
@@ -110,7 +120,7 @@ function toggleBibtex(articleid) {
   </li><br />
 </ol>
 </p>
-
+</div>
 
 
 <!--<h1>Domestic Journal</h1>
@@ -122,14 +132,15 @@ function toggleBibtex(articleid) {
 <ol>
 <br />
 </ol>-->
-  
+
+<div id="thesis">
 <h1>Thesis and Dissertation</h1>
 <ol>
 <li><strong>J. Kim.</strong>, “Improvement of Humanoid Gait Control using Actuator Deformation Model”, Master Thesis, Dept. of Transdisciplinary Studies, Seoul National University, Seoul, South Korea, February 2017.<br />
 <b><a href="pub/ms_thesis.pdf" target="blank">[PDF]</a></b>
 </li><br />
 </ol>
-
+</div>
 
 
 
