@@ -22,7 +22,8 @@ body {
 
 #layout-menu {
 	/*background: #f6f6f6;*/
-	background: #E5E1E6;
+	/* background: #E5E1E6; */
+	background: #C8C8C8; /*caltech subcolor*/
 	border: 1px solid #dddddd;
 	padding-top: 0.5em;
 	padding-left: 8px;
@@ -66,20 +67,40 @@ pre, tt {
 
 a, a > tt {
 	/*color: #224b8d;*/
-	color: #003C71;
+	/*color: #003c71;*/
+	color:  #003B4C; /*caltech subcolor*/
 	text-decoration: none;
 }
+
+/* JK added color theme */
+acal {
+	color:  #FF6C0C; /*caltech main theme*/
+	text-decoration: none;
+}
+
+avt{
+	color:  #861F41; /*VT main theme*/
+	text-decoration: none;
+}
+
+asnu{
+	color:  #0f0f70; /*SNU main theme*/
+	text-decoration: none;
+}
+/* JK added color theme */
 
 a:hover {
 	border-bottom: 1px gray dotted;
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #022b6d;
+	/* color: #022b6d; */
+	color: #003B4C; /*caltech subcolor*/
 	border-bottom: 1px gray solid;
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #527bbd;
+	/* color: #527bbd; */
+	color: #005851; /*caltech subcolor*/
 	text-decoration: none;
 }
 #layout-menu a:hover {
@@ -128,7 +149,8 @@ strong {
 
 h1, h2, h3 {
 	/*color: #527bbd;*/
-	color: #003c71;
+	/*color: #003c71;*/
+	color:  #003B4C; /*caltech subcolor*/
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
@@ -274,8 +296,9 @@ div.blockcontent {
 }
 
 div.infoblock > div.blockcontent {
-	/*background: #ffffee;*/
-	background: #f0f4ff;
+	/* background: #ffffee; */
+	/* background: #f0f4ff; */
+	background: #849895; /*caltech subcolor*/
 }
 
 div.blockcontent p + ul, div.blockcontent p + ol {
@@ -415,7 +438,7 @@ table.imgtable, table.imgtable td {
 	/*border: 1px solid #111;*/
 
 .dateinfo::after{
-	content:"2022-08-27";
+	content:"2022-11-16";
 }
 
 /*.dateinfo::before{
