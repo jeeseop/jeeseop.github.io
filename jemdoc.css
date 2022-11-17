@@ -73,7 +73,7 @@ a, a > tt {
 }
 
 /* JK added color theme */
-acal {
+acal, acal > tt {
 	color:  #FF6C0C; /*caltech main theme*/
 	text-decoration: none;
 }
