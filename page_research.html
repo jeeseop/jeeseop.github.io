@@ -173,8 +173,8 @@ MathJax.Hub.Config({
   <div class="txt-next-vid">
   <br>
   <p class="indent-para">
-  We present a hierarchical control scheme in which a high-level and real-time path planner, based on an event-based model predictive control (MPC), computes the optimal motion of the center of mass (COM) and tail trajectories. 
-  The MPC framework is developed for an innovative reduced-order linear inverted pendulum (LIP) model that is augmented with the tail dynamics. 
+  <!-- We present a hierarchical control scheme in which a high-level and real-time path planner, based on an event-based model predictive control (MPC), computes the optimal motion of the center of mass (COM) and tail trajectories.  -->
+  The MPC framework at the high level is developed for an innovative reduced-order linear inverted pendulum (LIP) model that is augmented with the tail dynamics to compute the optimal motion of the center of mass (COM) and tail trajectories.
   At the lower level of the control scheme, a nonlinear controller is implemented through the use of quadratic programming (QP) and virtual constraints to force the full-order dynamical model to track the prescribed optimal trajectories of the COM and tail. 
   <!--[<a href="pub/ral_2020_arxiv_ver.pdf" target="blank"><i>Paper</i></a>]--></p>
   </div>
@@ -199,10 +199,13 @@ MathJax.Hub.Config({
   <div class="txt-next-vid">
   <br>
   <p class="indent-para">
-  The higher level of the proposed control scheme is developed based on an event-based MPC that computes the optimal center of mass (COM) trajectories for a reduced-order linear inverted pendulum (LIP) model subject to the feasibility of the net ground reaction force (GRF). 
+  The higher level of the proposed control scheme is developed based on an event-based MPC that computes the optimal center of mass (COM) trajectories for a reduced-order linear inverted pendulum (LIP) model. 
+  <!-- subject to the feasibility of the net ground reaction force (GRF).  -->
   The asymptotic stability of a desired target point for the reduced-order model under the event-based MPC approach is investigated. 
   <!-- It is shown that the event-based nature of the proposed MPC approach can significantly reduce the computational burden associated with the real-time implementation of MPC techniques.  -->
-  To bridge the gap between reduced- and full-order models, QP-based virtual constraint controllers are developed at the lower level of the proposed control scheme to impose the full-order dynamics to track the optimal trajectories while having all individual GRFs in the friction cone.</p>
+  To bridge the gap between reduced- and full-order models, QP-based virtual constraint controllers are developed at the lower level of the proposed control scheme.
+  <!-- to impose the full-order dynamics to track the optimal trajectories while having all individual GRFs in the friction cone. -->
+  </p>
   </div>
   </div>
 </div>
