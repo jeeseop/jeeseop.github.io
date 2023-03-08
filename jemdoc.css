@@ -587,3 +587,10 @@ div.txt-next-vid{
 .button-4:-webkit-details-marker {
   display: none;
 }
+
+
+/* added css for keeping the span in recent news section */
+span {
+	display: inline-block;
+	width: 35px;
+  }
