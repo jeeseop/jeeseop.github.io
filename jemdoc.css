@@ -590,7 +590,12 @@ div.txt-next-vid{
 
 
 /* added css for keeping the span in recent news section */
-span {
+span.month {
 	display: inline-block;
 	width: 35px;
-  }
+}
+
+span.year {
+	display: inline-block;
+	width: 21px;
+}
