@@ -7,15 +7,26 @@
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <title>Jeeseop Kim </title>
 <!-- MathJax -->
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+<!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
 	  TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
-</script>
+</script> -->
 <!-- End MathJax -->
+
+<!-- REUSING HTML - JK -->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">   
+$(document).ready( function() {
+$("#research_cooperation").load("research_cooperation.html");
+$("#research_leggedrobots").load("research_leggedrobots.html");
+});
+</script>
+<!-- REUSING HTML - JK -->
 </head>
+
 <body style="width: 70%">
 <table summary="Table for page layout." id="tlayout">
 <tr valign="top">
@@ -65,10 +76,10 @@ MathJax.Hub.Config({
   <h2>Thrust Areas</h2>
 <ul class="tags">
   <li>
-    <a href="page_research.html" class="tag">Overview</a>
+    <a href="page_research.html" class="tag2">Overview</a>
     <a href="page_research_cooperation.html" class="tag">Cooperative Locomotion</a>
     <a href="page_research_safety.html" class="tag">Safety Critical Control</a>
-    <a href="page_research_bi_quad.html" class="tag2">Quadrupedal Robot/Humanoid</a>
+    <a href="page_research_bi_quad.html" class="tag">Quadrupedal Robot/Humanoid</a>
     <a href="page_research_etc.html" class="tag">ETC</a>
   </li>
 </ul> 
@@ -76,115 +87,46 @@ MathJax.Hub.Config({
 
 <br>
 
-<div id="quadrupedal_robot">
-  <h2>Distributed QP-Based Nonlinear Controllers on Legged Robots</h2>
-  <ul class="tags">
-    <!--<li><a href="#" class="tag">2022</a></li>-->
-    <li><a href="https://doi.org/10.1109/LCSYS.2022.3167795" class="button-4" target="blank">DOI</a>
-    <a href="https://www.youtube.com/watch?v=VoYYCZrJOps" class="button-4" target="blank">VIDEO</a>
-    <a href="#" class="tag">Tag: Quadrupedal Robot</a></li>
-  </ul>
-  <div class="vid-w-txt">
-  <div class="vid-youtube">
-  <br>
-  <!-- <iframe width="340" height="200" src="https://www.youtube.com/embed/VoYYCZrJOps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-  <a href="https://www.youtube.com/watch?v=VoYYCZrJOps" target="blank"><img src="imgs/distributed_qp.gif" width="340px" height="200px" /></a>
-  </div>
-  <div class="txt-next-vid">
-  <br>
-  <p class="indent-para">
-  This paper presents a formal foundation to systematically decompose QP-based centralized nonlinear controllers into a 
-  network of lower-dimensional local QPs, with application to legged locomotion. 
-  The proposed approach formulates a feedback structure between the local QPs and assumes a one-step communication delay protocol. 
-  <!-- The effectiveness of the analytical results is evaluated through rigorous numerical simulations and various experiments on a quadrupedal robot with the result being robust locomotion on different terrains and in the presence of external disturbances.  -->
-  The paper shows that the proposed distributed QPs have considerably less computation time and reduced noise propagation sensitivity than the centralized QP.
-  </p>
-  </div>
-  </div>
-</div>
 
-<div id="quadrupedal_robot">
-  <h2>Quadrupedal Locomotion with Articulated Tails <br> <font size="-0.5" style="color:#861F41">(ASME Dynamic Systems & Control Division Rudolf Kalman Best Paper Award)</font></h2>
-  <ul class="tags">
-    <!-- <li><a href="#" class="tag">2021</a></li> -->
-    <li><a href="https://doi.org/10.1115/1.4049555" class="button-4" target="blank">DOI</a>
-    <a href="https://www.youtube.com/watch?v=Bi7Zec66nbA" class="button-4" target="blank">VIDEO</a>
-    <a href="#" class="tag">Tag: Quadrupedal Robot</a></li>
-  </ul>
-  <div class="vid-w-txt">
-  <div class="vid-youtube">
-  <br>
-  <!-- <iframe width="340" height="200" src="https://www.youtube.com/embed/Bi7Zec66nbA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-  <a href="https://www.youtube.com/watch?v=Bi7Zec66nbA" target="blank"><img src="imgs/tail.gif" width="340px" height="200px" /></a>
-  </div>
-  <div class="txt-next-vid">
-  <br>
-  <p class="indent-para">
-  <!-- We present a hierarchical control scheme in which a high-level and real-time path planner, based on an event-based model predictive control (MPC), computes the optimal motion of the center of mass (COM) and tail trajectories.  -->
-  The MPC framework at the high level is developed for an innovative reduced-order linear inverted pendulum (LIP) model that is augmented with the tail dynamics to compute the optimal motion of the center of mass (COM) and tail trajectories.
-  At the lower level of the control scheme, a nonlinear controller is implemented through the use of quadratic programming (QP) and virtual constraints to force the full-order dynamical model to track the prescribed optimal trajectories of the COM and tail. 
-  <!--[<a href="pub/ral_2020_arxiv_ver.pdf" target="blank"><i>Paper</i></a>]--></p>
-  </div>
-  </div>
-</div>
 
-<div id="quadrupedal_robot">
-  <h2> Hierarchical Controller for Robust Quadrupedal Locomotion</h2>
-  <ul class="tags">
-    <!-- <li><a href="#" class="tag">2020</a></li> -->
-    <li><a href="pub/ral_2020_arxiv_ver.pdf" class="button-4" target="blank">PDF</a>
-    <a href="https://doi.org/10.1109/LRA.2020.3001471" class="button-4" target="blank">DOI</a>
-    <a href="https://www.youtube.com/watch?v=rfuPbzmJfLM" class="button-4" target="blank">VIDEO</a>
-    <a href="#" class="tag">Tag: Quadrupedal Robot</a></li>
-  </ul>
-  <div class="vid-w-txt">
-  <div class="vid-youtube">
-  <br>
-  <!-- <iframe width="340" height="200" src="https://www.youtube.com/embed/rfuPbzmJfLM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-  <a href="https://www.youtube.com/watch?v=rfuPbzmJfLM" target="blank"><img src="imgs/lip_qp.gif" width="340px" height="200px" /></a>
-  </div>
-  <div class="txt-next-vid">
-  <br>
-  <p class="indent-para">
-  The higher level of the proposed control scheme is developed based on an event-based MPC that computes the optimal center of mass (COM) trajectories for a reduced-order linear inverted pendulum (LIP) model. 
-  <!-- subject to the feasibility of the net ground reaction force (GRF).  -->
-  The asymptotic stability of a desired target point for the reduced-order model under the event-based MPC approach is investigated. 
-  <!-- It is shown that the event-based nature of the proposed MPC approach can significantly reduce the computational burden associated with the real-time implementation of MPC techniques.  -->
-  To bridge the gap between reduced- and full-order models, QP-based virtual constraint controllers are developed at the lower level of the proposed control scheme.
-  <!-- to impose the full-order dynamics to track the optimal trajectories while having all individual GRFs in the friction cone. -->
-  </p>
-  </div>
-  </div>
-</div>
 
-<div id="humanoid">
-  <h2>Joint Elasticity Compensation for Walking Stability</h2>
+<div id="research_cooperation"></div>
+<div id="research_leggedrobots"></div>
+
+
+
+
+<div id="medical_robot">
+  <h2>Application of Robot Manipulator for Cardiopulmonary Resuscitation (CPR)</h2>
   <ul class="tags">
     <!-- <li><a href="#" class="tag">2016</a></li> -->
-    <li><a href="pub/ichr_2016.pdf" class="button-4" target="blank">PDF</a>
-    <a href="https://doi.org/10.1109/HUMANOIDS.2016.7803250" class="button-4" target="blank">DOI</a>
-    <a href="https://www.youtube.com/watch?v=oFOKdc9T78s" class="button-4" target="blank">VIDEO</a>
-    <a href="#" class="tag">Tag: Humanoid</a></li>
+    <li><a href="pub/iser_2016.pdf" class="button-4" target="blank">PDF</a>
+    <a href="https://doi.org/10.1007/978-3-319-50115-4_74" class="button-4" target="blank">DOI</a>
+    <a href="https://www.youtube.com/watch?v=D9saZERvzf8" class="button-4" target="blank">VIDEO</a>
+    <a href="#" class="tag">Tag: Medical Robot</a></li>
   </ul>
   <div class="vid-w-txt">
   <div class="vid-youtube">
   <br>
-  <!-- <iframe width="340" height="200" src="https://www.youtube.com/embed/oFOKdc9T78s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-  <a href="https://www.youtube.com/watch?v=oFOKdc9T78s" target="blank"><img src="imgs/elasticity.gif" width="340px" height="200px" /></a>
+  <!-- <iframe width="340" height="200" src="https://www.youtube.com/embed/D9saZERvzf8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  <a href="https://www.youtube.com/watch?v=D9saZERvzf8" target="blank"><img src="imgs/cpr.gif" width="340px" height="200px" /></a>
+  <!--<br>
+  <img src="photos/cpr_blockdiagram.jpg" width="350"></img>-->
   </div>
   <div class="txt-next-vid">
   <br>
   <p class="indent-para">
-  The actuators in humanoid robots inevitably have compliance in their joint mechanisms. 
-  The joint elasticity often negatively affects static and dynamic performance of the robot. 
-  <!-- In the specific case of humanoid walking, the elasticity in the actuators can create problems not only on the performance but also on the stability, which is most critical for walking.  -->
-  We modeled the joint deformation and proposed its compensation method to improve walking control performance and stability. 
-  The proposed algorithm is implemented on our humanoid robot and its performance is demonstrated by improved stability of walking.</p>
+  <!-- We made an application of a robot manipulator to perform Cardiopulmonary resuscitation(CPR) in emergency situations.  -->
+  CPR is one of the most important treatments which serves to save patients in cardiac arrest. 
+  The proposed robot CPR system attempts to overcome the limitations of current CPR methods in two aspects. 
+  First, it can provide much more consistent CPR than humans in terms of strength and timing. 
+  Second, biological data of a patient can be used to determine the best compression point during CPR. 
+  The feasibility of the proposed system is demonstrated through experiments: one simulation on a mannequin and two animal tests. 
+  <!-- It is also expected that this robotic CPR system can be a good platform to investigate many aspects of CPR methods and guidelines with accurate measurements and actions.  -->
+  We collaborated with Seoul National University, College of Medicine. </p>
   </div>
   </div>
 </div>
-
-
 
 <!--<h2>Online Multi-Robot Exploration of a Translating Plume of Unknown Size and Shape</h2>
 <img src="photos/quad_plume_at_quarry.png" width="290"></img>
@@ -193,7 +135,6 @@ MathJax.Hub.Config({
 <br>
 <p>In this work, we study the problem of exploring a translating plume with a team of aerial robots. The shape and the size of the plume are unknown to the robots. The objective is to find a tour for each robot such that they collectively explore the plume. Specifically, the tours must be such that each point in the plume must be visible from the field-of-view of some robot along its tour. We propose a recursive Depth-First Search (DFS)-based algorithm that yields a constant competitive ratio for the exploration problem. The competitive ratio is \(\frac{2(S_r+S_p)(R+\lfloor\log R\rfloor)}{(S_r−S_p)(1+\lfloor\log R\rfloor)}\) where \(R\) is the number of robots, and \(S_r\) and \(S_p\) are the robot speed and the plume speed, respectively. We also consider a more realistic scenario where the plume shape is not restricted to grid cells but an arbitrary shape. We show our algorithm has \(\frac{2(S_r+S_p)(18R+\lfloor\log R\rfloor)}{(S_r−S_p)(1+\lfloor\log R\rfloor)}\) competitive ratio under the fat condition. We empirically verify our algorithm using simulations.
 <br />[<a href="pub/plume-icra-2019.pdf" target=&ldquo;blank&rdquo;><i>Paper</i></a>]</p>
-
 <h2>Multi-Robot Multi-Target Tracking under Limited Bandwidth</h2>
 <img src="photos/problem_description.png" width="330"></img>
 <br>
@@ -201,7 +142,6 @@ MathJax.Hub.Config({
 <br>
 <p>We study two multi-robot assignment problems for multi-target tracking. We consider distributed approaches in order to deal with limited sensing and communication ranges. We seek to simultaneously assign trajectories and targets to the robots. Our focus is on local algorithms that achieve performance close to the optimal algorithms with limited communication. We show how to use a local algorithm that guarantees a bounded approximate solution within \(\mathcal{O}(h\log 1/\epsilon)\) communication rounds. We compare with a greedy approach that achieves a 2–approximation in as many rounds as the number of robots. Simulation results show that the local algorithm is an effective solution to the assignment problem.
 <br />[<a href="pub/sata-icra-2018.pdf" target=&ldquo;blank&rdquo;><i>Paper</i></a>]</p>
-
 <h2>Tracking an Unknown and Varying Number of Targets</h2>
 <iframe width="410" height="230" src="https://www.youtube.com/embed/t65ZhdNjswY?autoplay=0&loop=0&playlist=t65ZhdNjswY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <iframe width="410" height="230" src="https://www.youtube.com/embed/yY8lkor-7no?autoplay=0&loop=0&playlist=yY8lkor-7no" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 <br>
