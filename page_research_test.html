@@ -1,65 +1,57 @@
+<!-- Always same on top of HTML homepage - JK -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!-- Always same on top of HTML homepage - JK -->
+
+<!-- Always same head of HTML homepage - JK -->
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta name="author" content="JeeseopKim" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Jeeseop Kim </title>
-<!-- MathJax -->
-<!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-	  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-</script> -->
-<!-- End MathJax -->
-
-<!-- REUSING HTML - JK -->
+<!-- SCRIPT for reusing HTML - JK -->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript">   
 $(document).ready( function() {
-$("#menulist").load("menulist.html");
-$("#research_statementandareas").load("research_statement_areas.html");
-$("#research_cooperation").load("research_cooperation.html");
-$("#research_leggedrobots").load("research_leggedrobots.html");
-$("#research_etc").load("research_etc.html");
+$("#menulist").load("src_menulist.html");
+$("#research_statementandareas").load("src_research_statement_areas.html");
+$("#research_cooperation").load("src_research_cooperation.html");
+$("#research_safety").load("src_research_safety.html");
+$("#research_leggedrobots").load("src_research_leggedrobots.html");
+$("#research_etc").load("src_research_etc.html");
 });
 </script>
-<!-- REUSING HTML - JK -->
+<!-- SCRIPT for reusing HTML - JK -->
+<title>Jeeseop Kim </title>
 </head>
+<!-- Always same head of HTML homepage - JK -->
 
 <body style="width: 70%">
 <table summary="Table for page layout." id="tlayout">
 <tr valign="top">
 <td id="layout-menu">
-
 <div id="menulist"></div>
-
 </td>
 
 <td id="layout-content">
-<div id="toptitle">
-<h1>Jeeseop Kim </h1>
-</div>
+  <div id="toptitle">
+  <h1>Jeeseop Kim </h1>
+  </div>
 
+  <div id="research_statementandareas"></div>
 
-<div id="research_statement_areas"></div>
+  <br>
 
-<br>
+  <div id="research_cooperation"></div>
+  <div id="research_safety"></div>
+  <div id="research_leggedrobots"></div>
+  <div id="research_etc"></div>
 
-<div id="research_cooperation"></div>
-<div id="research_leggedrobots"></div>
-<div id="research_etc"></div>
-
-
-
-<div id="footer">
-<div id="footer-text">
-<p class="dateinfo">Page generated </p>
-</div>
-</div>
+  <div id="footer">
+  <div id="footer-text">
+  <p class="dateinfo">Page generated </p>
+  </div>
+  </div>
 </td>
 </tr>
 </table>
