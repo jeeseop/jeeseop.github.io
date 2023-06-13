@@ -20,8 +20,11 @@ MathJax.Hub.Config({
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript">   
 $(document).ready( function() {
+$("#menulist").load("menulist.html");
+$("#research_statementandareas").load("research_statement_areas.html");
 $("#research_cooperation").load("research_cooperation.html");
 $("#research_leggedrobots").load("research_leggedrobots.html");
+$("#research_etc").load("research_etc.html");
 });
 </script>
 <!-- REUSING HTML - JK -->
@@ -31,122 +34,26 @@ $("#research_leggedrobots").load("research_leggedrobots.html");
 <table summary="Table for page layout." id="tlayout">
 <tr valign="top">
 <td id="layout-menu">
-<div class="menu-category">menu</div>
-<div class="menu-item"><a href="index.html">Home</a></div>
-<div class="menu-item"><a href="page_research.html" class="current">Research</a>
-  <ul class="menu-item">
-    <!--<li>
-      <a href="#research_statement">Research Statement</a>
-    </li>-->
-    <li>
-      <a href="page_research_cooperation.html">Cooperative Locomotion</a>
-    </li>
-    <li>
-      <a href="page_research_safety.html">Safety Critical Control</a>
-    </li>
-    <li>
-      <a href="page_research_bi_quad.html">Legged Robots</a>
-    </li>
-    <li>
-      <a href="page_research_etc.html">ETC</a>
-    </li>
-  </ul>
-</div>
-<div class="menu-item"><a href="page_pub_journal_conf.html">Publications</a></div>
-<!--<div class="menu-item"><a href="rep_pub.html">Representative Papers</a></div>-->
-<div class="menu-item"><a href="jeeseop_cv.pdf">CV</a></div>
+
+<div id="menulist"></div>
+
 </td>
+
 <td id="layout-content">
 <div id="toptitle">
 <h1>Jeeseop Kim </h1>
 </div>
 
-<div id="research_statement">
-<h2>Research Statement</h2>
-<p>
-  My research goal is to establish a firm foundation that will extend the state-of-the-art methods 
-  for designing resilient and intelligent control algorithms for a wide range of legged robot applications. This overview includes
-  1) collaborative multi-agent systems with decentralized and distributed control policies,
-  2) legged robots with safety-critical control,
-  3) trajectory optimization and path planning for various applications on autonomous robots.
-</p>
-</div>
 
-<div id="research_areas">
-  <h2>Thrust Areas</h2>
-<ul class="tags">
-  <li>
-    <a href="page_research.html" class="tag2">Overview</a>
-    <a href="page_research_cooperation.html" class="tag">Cooperative Locomotion</a>
-    <a href="page_research_safety.html" class="tag">Safety Critical Control</a>
-    <a href="page_research_bi_quad.html" class="tag">Quadrupedal Robot/Humanoid</a>
-    <a href="page_research_etc.html" class="tag">ETC</a>
-  </li>
-</ul> 
-</div>
+<div id="research_statement_areas"></div>
 
 <br>
-
-
-
 
 <div id="research_cooperation"></div>
 <div id="research_leggedrobots"></div>
+<div id="research_etc"></div>
 
 
-
-
-<div id="medical_robot">
-  <h2>Application of Robot Manipulator for Cardiopulmonary Resuscitation (CPR)</h2>
-  <ul class="tags">
-    <!-- <li><a href="#" class="tag">2016</a></li> -->
-    <li><a href="pub/iser_2016.pdf" class="button-4" target="blank">PDF</a>
-    <a href="https://doi.org/10.1007/978-3-319-50115-4_74" class="button-4" target="blank">DOI</a>
-    <a href="https://www.youtube.com/watch?v=D9saZERvzf8" class="button-4" target="blank">VIDEO</a>
-    <a href="#" class="tag">Tag: Medical Robot</a></li>
-  </ul>
-  <div class="vid-w-txt">
-  <div class="vid-youtube">
-  <br>
-  <!-- <iframe width="340" height="200" src="https://www.youtube.com/embed/D9saZERvzf8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-  <a href="https://www.youtube.com/watch?v=D9saZERvzf8" target="blank"><img src="imgs/cpr.gif" width="340px" height="200px" /></a>
-  <!--<br>
-  <img src="photos/cpr_blockdiagram.jpg" width="350"></img>-->
-  </div>
-  <div class="txt-next-vid">
-  <br>
-  <p class="indent-para">
-  <!-- We made an application of a robot manipulator to perform Cardiopulmonary resuscitation(CPR) in emergency situations.  -->
-  CPR is one of the most important treatments which serves to save patients in cardiac arrest. 
-  The proposed robot CPR system attempts to overcome the limitations of current CPR methods in two aspects. 
-  First, it can provide much more consistent CPR than humans in terms of strength and timing. 
-  Second, biological data of a patient can be used to determine the best compression point during CPR. 
-  The feasibility of the proposed system is demonstrated through experiments: one simulation on a mannequin and two animal tests. 
-  <!-- It is also expected that this robotic CPR system can be a good platform to investigate many aspects of CPR methods and guidelines with accurate measurements and actions.  -->
-  We collaborated with Seoul National University, College of Medicine. </p>
-  </div>
-  </div>
-</div>
-
-<!--<h2>Online Multi-Robot Exploration of a Translating Plume of Unknown Size and Shape</h2>
-<img src="photos/quad_plume_at_quarry.png" width="290"></img>
-<br>
-<iframe width="410" height="230" src="https://www.youtube.com/embed/tfzz6i0i5Dc?autoplay=0&loop=0&playlist=tfzz6i0i5Dc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <iframe width="410" height="230" src="https://www.youtube.com/embed/xtQ6j21KTOI?autoplay=0&loop=0&playlist=xtQ6j21KTOI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-<p>In this work, we study the problem of exploring a translating plume with a team of aerial robots. The shape and the size of the plume are unknown to the robots. The objective is to find a tour for each robot such that they collectively explore the plume. Specifically, the tours must be such that each point in the plume must be visible from the field-of-view of some robot along its tour. We propose a recursive Depth-First Search (DFS)-based algorithm that yields a constant competitive ratio for the exploration problem. The competitive ratio is \(\frac{2(S_r+S_p)(R+\lfloor\log R\rfloor)}{(S_r−S_p)(1+\lfloor\log R\rfloor)}\) where \(R\) is the number of robots, and \(S_r\) and \(S_p\) are the robot speed and the plume speed, respectively. We also consider a more realistic scenario where the plume shape is not restricted to grid cells but an arbitrary shape. We show our algorithm has \(\frac{2(S_r+S_p)(18R+\lfloor\log R\rfloor)}{(S_r−S_p)(1+\lfloor\log R\rfloor)}\) competitive ratio under the fat condition. We empirically verify our algorithm using simulations.
-<br />[<a href="pub/plume-icra-2019.pdf" target=&ldquo;blank&rdquo;><i>Paper</i></a>]</p>
-<h2>Multi-Robot Multi-Target Tracking under Limited Bandwidth</h2>
-<img src="photos/problem_description.png" width="330"></img>
-<br>
-<iframe width="410" height="230" src="https://www.youtube.com/embed/Rf8U6JuJVIs?autoplay=0&loop=0&playlist=Rf8U6JuJVIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <iframe width="410" height="230" src="https://www.youtube.com/embed/725_97mbcTU?autoplay=0&loop=0&playlist=725_97mbcTU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-<br>
-<p>We study two multi-robot assignment problems for multi-target tracking. We consider distributed approaches in order to deal with limited sensing and communication ranges. We seek to simultaneously assign trajectories and targets to the robots. Our focus is on local algorithms that achieve performance close to the optimal algorithms with limited communication. We show how to use a local algorithm that guarantees a bounded approximate solution within \(\mathcal{O}(h\log 1/\epsilon)\) communication rounds. We compare with a greedy approach that achieves a 2–approximation in as many rounds as the number of robots. Simulation results show that the local algorithm is an effective solution to the assignment problem.
-<br />[<a href="pub/sata-icra-2018.pdf" target=&ldquo;blank&rdquo;><i>Paper</i></a>]</p>
-<h2>Tracking an Unknown and Varying Number of Targets</h2>
-<iframe width="410" height="230" src="https://www.youtube.com/embed/t65ZhdNjswY?autoplay=0&loop=0&playlist=t65ZhdNjswY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <iframe width="410" height="230" src="https://www.youtube.com/embed/yY8lkor-7no?autoplay=0&loop=0&playlist=yY8lkor-7no" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-<br>
-<p>We study the problem of searching and tracking a collection of moving targets using a robot with a limited Field-Of-View (FOV) sensor. The actual number of targets present in the environment is not known a priori. We propose a search and tracking framework based on the concept of Bayesian Random Finite Sets (RFSs). Specifically, we generalize the Gaussian Mixture Probability Hypothesis Density (GM-PHD) filter which was previously applied for only tracking problems to allow for simultaneous search and tracking. The proposed framework can extract individual target tracks as well as estimate the number and spatial density of the targets. We also show how to use Gaussian Process (GP) regression to extract and predict nonlinear target trajectories in this framework. We demonstrate the efficacy of our techniques through representative simulations where we also compare the performance of two active control strategies.
-<br />[<a href="pub/fire-icra-2017.pdf" target=&ldquo;blank&rdquo;><i>Paper</i></a>]</p>-->
 
 <div id="footer">
 <div id="footer-text">
