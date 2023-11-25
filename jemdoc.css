@@ -537,6 +537,57 @@ div.txt-next-vid{
 	border-left-color: #508590; /* rgb(23, 20, 220);*/
   }
 
+  .tag_overview {
+	background: #eee;
+	border-radius: 3px 0 0 3px;
+	color: #999;
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	padding: 0 322px 0 322px;
+	position: relative;
+	margin: 0 10px 10px 0;
+	text-decoration: none;
+	-webkit-transition: color 0.2s;
+  }
+  
+  .tag_overview::before {
+	background: #fff;
+	display: inline-block;
+	border-radius: 10px;
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+	content: '';
+	height: 6px;
+	left: 10px;
+	position: absolute;
+	width: 6px;
+	top: 10px;
+  }
+  
+  .tag_overview::after {
+	background: #fff;
+	display: inline-block;
+	border-bottom: 13px solid transparent;
+	border-left: 10px solid #eee;
+	border-top: 13px solid transparent;
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+  }
+
+  .tag_overview:hover {
+	/*background-color: crimson;*/
+	background-color: #508590; /* rgb(23, 20, 220);*/
+	color: white;
+	border-bottom: none; /* original setup has border bottom on top - remove bottom line only on tag hover*/
+  }
+  
+  .tag_overview:hover::after {
+	/*border-left-color: crimson; */
+	border-left-color: #508590; /* rgb(23, 20, 220);*/
+  }
+
   .tag2 {
 	background: #eee;
 	border-radius: 3px 0 0 3px;
@@ -569,6 +620,51 @@ div.txt-next-vid{
   }
   
   .tag2::after {
+	background: #fff;
+	display: inline-block;
+	border-bottom: 13px solid transparent;
+	border-left: 10px solid #eee;
+	border-top: 13px solid transparent;
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-left-color: #508590; /* rgb(23, 20, 220);*/
+  }
+
+  .tag2_overview {
+	background: #eee;
+	border-radius: 3px 0 0 3px;
+	color: #999;
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	/*padding: 0 20px 0 23px;*/
+	padding: 0 322px 0 322px;
+	position: relative;
+	margin: 0 10px 10px 0;
+	text-decoration: none;
+	-webkit-transition: color 0.2s;
+	background-color: #508590; /* rgb(23, 20, 220);*/
+	color: white;
+	border-bottom: none; /* original setup has border bottom on top - remove bottom line only on tag hover*/
+  }
+  
+  .tag2_overview::before {
+	background: #fff;
+	display: inline-block;
+	border-radius: 10px;
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+	content: '';
+	height: 6px;
+	left: 10px;
+	position: absolute;
+	width: 6px;
+	top: 10px;
+	border-left-color: #508590; /* rgb(23, 20, 220);*/
+  }
+  
+  .tag2_overview::after {
 	background: #fff;
 	display: inline-block;
 	border-bottom: 13px solid transparent;
