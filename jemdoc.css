@@ -298,7 +298,8 @@ div.blockcontent {
 div.infoblock > div.blockcontent {
 	/* background: #ffffee; */
 	/* background: #f0f4ff; */
-	background: #849895; /*caltech subcolor*/
+	/*background: #849895;*/ /*caltech subcolor*/
+	background: #c8c8c8; /*caltech subcolor*/
 }
 
 div.blockcontent p + ul, div.blockcontent p + ol {
@@ -438,7 +439,7 @@ table.imgtable, table.imgtable td {
 	/*border: 1px solid #111;*/
 
 .dateinfo::after{
-	content:"2023-06-13";
+	content:"2023-11-25";
 }
 
 /*.dateinfo::before{
