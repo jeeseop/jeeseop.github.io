@@ -14,7 +14,6 @@
 <script type="text/javascript">   
 $(document).ready( function() {
 $("#menulist").load("src_research_menulist.html");
-$("#research_statement").load("src_research_statement.html");
 $("#research_safety").load("src_research_safety.html");
 });
 </script>
@@ -35,19 +34,29 @@ $("#research_safety").load("src_research_safety.html");
 <h1>Jeeseop Kim </h1>
 </div>
 
-<div id="research_statement"></div>
+<div id="research_statement">
+  <h2>Safety Critical Control</h2>
+      <p class="normal-para">
+        Ensuring safety of robot locomotion in various conditions is essential to employ the system close to the human-centered environments. 
+        In the domain of motion planning and collision avoidance, various studies have been 
+        introduced on various platforms but not widely on legged robots. 
+        Furthermore, the safety-critical controllers typically leverage the distance from the unsafe set, 
+        resulting in robots maneuver safely only when in close proximity. 
+        To improve upon this, MPC approach with CBF or HJ reachability analysis have demonstrated the effectiveness with some computational burdens.
+      </p><p>
+        To date, my research includes developing the model-free safety-critical planner/controller 
+        subject to various environments including the coordination of the legged robots in various environments. 
+        Furthermore, this thread put the efforts to develop firm foundation of the notion of the safety 
+        to scale the application of safety-critical planner/controllers by leveraging tools from nonlinear control theory.
+      </p>
+</div>
 
-<div id="research_areas">
-  <h2>Research Interests</h2>
-      <ul class="tags">
-      <li>
-          <a href="page_research.html" class="tag_overview">Overview</a> <br>
-          <a href="page_research_cooperation.html" class="tag">Cooperative Locomotion</a>
-          <a href="page_research_safety.html" class="tag2">Safety Critical Control</a>
-          <a href="page_research_bi_quad.html" class="tag">Quadrupedal Robot/Humanoid</a>
-          <a href="page_research_etc.html" class="tag">ETC</a>
-      </li>
-      </ul> 
+<div id="research_aims">
+  <h2>Research Aims</h2>
+      <p class="normal-para">
+        Research thread aims to establish systematic methods of achieving safety-critical robotic behaviors, 
+        including stable and robust legged locomotion in various environment setups, by leveraging tools from nonlinear control theory.
+      </p>
 </div>
 
 <br>
