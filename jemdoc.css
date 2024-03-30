@@ -439,7 +439,8 @@ table.imgtable, table.imgtable td {
 	/*border: 1px solid #111;*/
 
 .dateinfo::after{
-	content:"2024-02-11";
+	/* content:"2024-03-30"; */
+	content:"03-30-2024";
 }
 
 /*.dateinfo::before{
