@@ -425,11 +425,14 @@ table.imgtable, table.imgtable td {
 	min-width: 700px;
 }
 
-
 .indent-para { 
 	text-indent: 15px;
 	word-break: break-word;
 	line-height: 1.5;
+}
+
+.centered{
+	text-align: center;
 }
 	/*word-break: break-all; */
 	/*hyphens works with <html lang="en"> in html file*/
