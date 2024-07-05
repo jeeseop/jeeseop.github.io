@@ -421,7 +421,8 @@ table.imgtable, table.imgtable td {
 .normal-para { 
 	word-break: break-word;
 	line-height: 1.5;
-	min-width: 550px;
+	/* min-width: 550px; */
+	min-width: 700px;
 }
 
 
@@ -440,7 +441,7 @@ table.imgtable, table.imgtable td {
 
 .dateinfo::after{
 	/* content:"2024-03-30"; */
-	content:"03-30-2024";
+	content:"07-05-2024";
 }
 
 /*.dateinfo::before{
@@ -740,75 +741,171 @@ div.txt-next-vid{
 
   /* add css for button 89 */
 .button-89 {
-  --b: 3px;   /* border thickness */
-  --s: .45em; /* size of the corner */
-  --color: #373B44;
-  
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-  color: var(--color);
-  --_p: var(--s);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
-  outline: var(--b) solid #0000;
-  outline-offset: .6em;
-  font-size: 16px;
-
-  border: 0;
-
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-89:hover,
-.button-89:focus-visible{
-  --_p: 0px;
-  outline-color: var(--color);
-  outline-offset: .05em;
-}
-
-.button-89:active {
-  background: var(--color);
-  color: #fff;
-}
-
-  /* add css for button 89 highlight */
-  .button-89h {
 	--b: 3px;   /* border thickness */
-	--s: .45em; /* size of the corner */
-	--color: #7A303F;
+	--s: .25em; /* size of the corner */
+	--color: #373B44;
 	
 	padding: calc(.5em + var(--s)) calc(.9em + var(--s));
 	color: var(--color);
 	--_p: var(--s);
 	background:
-	  conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-	  var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+		conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+		var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
 	transition: .3s linear, color 0s, background-color 0s;
 	outline: var(--b) solid #0000;
 	outline-offset: .6em;
 	font-size: 16px;
-  
+
 	border: 0;
-  
+
 	user-select: none;
 	-webkit-user-select: none;
 	touch-action: manipulation;
-  }
-  
-  .button-89h:hover,
-  .button-89h:focus-visible{
+
+	/* Fixed width - JK added manually */
+	width: 20em; /* Change this value to your desired width */
+	box-sizing: border-box;
+	text-align: center;
+	display: inline-block;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
 	--_p: 0px;
 	outline-color: var(--color);
 	outline-offset: .05em;
-  }
-  
-  .button-89h:active {
+}
+
+.button-89:active {
 	background: var(--color);
 	color: #fff;
-  }
+}
+
+/* add css for button 89 highlight */
+.button-89h {
+	--b: 3px;   /* border thickness */
+	--s: .25em; /* size of the corner */
+	--color: #7A303F;
+
+	padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+	color: var(--color);
+	--_p: var(--s);
+	background:
+		conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+		var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+	transition: .3s linear, color 0s, background-color 0s;
+	outline: var(--b) solid #0000;
+	outline-offset: .6em;
+	font-size: 16px;
+
+	border: 0;
+
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+
+	/* Fixed width - JK added manually */
+	width: 20em; /* Change this value to your desired width */
+	box-sizing: border-box;
+	text-align: center;
+	display: inline-block;
+}
+  
+.button-89h:hover,
+.button-89h:focus-visible{
+	--_p: 0px;
+	outline-color: var(--color);
+	outline-offset: .05em;
+}
+
+.button-89h:active {
+	background: var(--color);
+	color: #fff;
+}
+
+  /* add css for button 89 - OVERVIEW */
+  .button-89overview {
+	--b: 3px;   /* border thickness */
+	--s: .25em; /* size of the corner */
+	--color: #373B44;
+	
+	padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+	color: var(--color);
+	--_p: var(--s);
+	background:
+		conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+		var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+	transition: .3s linear, color 0s, background-color 0s;
+	outline: var(--b) solid #0000;
+	outline-offset: .6em;
+	font-size: 16px;
+
+	border: 0;
+
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+
+	/* Fixed width - JK added manually */
+	width: 40.25em; /* Change this value to your desired width */
+	box-sizing: border-box;
+	text-align: center;
+	display: inline-block;
+}
+
+.button-89overview:hover,
+.button-89overview:focus-visible{
+	--_p: 0px;
+	outline-color: var(--color);
+	outline-offset: .05em;
+}
+
+.button-89overview:active {
+	background: var(--color);
+	color: #fff;
+}
+
+/* add css for button 89 OVERVIEW highlight */
+.button-89overviewh {
+	--b: 3px;   /* border thickness */
+	--s: .25em; /* size of the corner */
+	--color: #7A303F;
+
+	padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+	color: var(--color);
+	--_p: var(--s);
+	background:
+		conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+		var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+	transition: .3s linear, color 0s, background-color 0s;
+	outline: var(--b) solid #0000;
+	outline-offset: .6em;
+	font-size: 16px;
+
+	border: 0;
+
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+
+	/* Fixed width - JK added manually */
+	width: 40.25em; /* Change this value to your desired width */
+	box-sizing: border-box;
+	text-align: center;
+	display: inline-block;
+}
+  
+.button-89overviewh:hover,
+.button-89overviewh:focus-visible{
+	--_p: 0px;
+	outline-color: var(--color);
+	outline-offset: .05em;
+}
+
+.button-89overviewh:active {
+	background: var(--color);
+	color: #fff;
+}
 
 
 
