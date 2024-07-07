@@ -422,7 +422,7 @@ table.imgtable, table.imgtable td {
 	word-break: break-word;
 	line-height: 1.5;
 	/* min-width: 550px; */
-	min-width: 650px;
+	min-width: 600px;
 }
 
 .indent-para { 
