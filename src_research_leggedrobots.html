@@ -1,13 +1,81 @@
+<div id="humanoid">
+  <h2>Dynamic Walking on Highly Underactuated Point Foot Humanoids: Closing the Loop between HZD and HLIP</h2>
+  <ul class="tags">
+    <!--<li><a href="#" class="tag">2022</a></li>-->
+    <li>
+      <a href="https://arxiv.org/abs/2406.13115" class="button-4" target="blank">ARXIV</a>
+      <!-- <a href="https://doi.org/10.1109/CDC49753.2023.10383745" class="button-4" target="blank">DOI</a> -->
+      <a href="https://vimeo.com/924420841" class="button-4" target="blank">VIDEO</a>
+      <a href="page_research_bi_quad.html" class="tag">Tag: Humanoid</a>
+    </li>
+  </ul>
+  <div class="vid-w-txt">
+  <div class="vid-youtube">
+  <br>
+  <!-- <iframe width="340" height="200" src="https://www.youtube.com/embed/VoYYCZrJOps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  <a href="https://vimeo.com/924420841" target="blank"><img src="imgs_compressed/hzd_hlip_pointfoot.gif" width="340px" height="200px" /></a>
+  </div>
+  <div class="txt-next-vid">
+  <br>
+  <p class="indent-para">
+  Realizing bipedal locomotion on humanoid robots with point feet is especially challenging due to their highly underactuated nature, high degrees of freedom, and hybrid dynamics resulting from impacts. 
+  With the goal of addressing this challenging problem, this paper develops a control framework for realizing dynamic locomotion and implements it on a novel point foot humanoid: ADAM. 
+  To this end, we close the loop between Hybrid Zero Dynamics (HZD) and Hybrid linear inverted pendulum (HLIP) based step length regulation. 
+  <!-- To leverage the full-order hybrid dynamics of the robot, walking gaits are first generated offline by utilizing HZD. -->
+  <!-- These trajectories are stabilized online through the use of a HLIP based regulator.  -->
+  <!-- Finally, the planned trajectories are mapped into the full-order system using a task space controller incorporating inverse kinematics.  -->
+  </p>
+  </div>
+  </div>
+</div>
+
+<div id="humanoid" id="reasoning">
+  <h2>Data-Driven Predictive Control for Robust Exoskeleton Locomotion</h2>
+  <ul class="tags">
+    <!--<li><a href="#" class="tag">2022</a></li>-->
+    <li>
+      <a href="https://arxiv.org/abs/2403.15658" class="button-4" target="blank">ARXIV</a>
+      <!-- <a href="https://doi.org/10.1109/CDC49753.2023.10383745" class="button-4" target="blank">DOI</a> -->
+      <a href="https://www.youtube.com/watch?v=rgs36YXRb4I" class="button-4" target="blank">VIDEO</a>
+      <a href="page_research_bi_quad.html" class="tag">Tag: Exo</a>
+    </li>
+  </ul>
+  <div class="vid-w-txt">
+  <div class="vid-youtube">
+  <br>
+  <!-- <iframe width="340" height="200" src="https://www.youtube.com/embed/VoYYCZrJOps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  <a href="https://www.youtube.com/watch?v=rgs36YXRb4I" target="blank"><img src="imgs_compressed/ddpc_exo.gif" width="340px" height="200px" /></a>
+  </div>
+  <div class="txt-next-vid">
+  <br>
+  <p class="indent-para">
+  Exoskeleton locomotion must be robust while being adaptive to different users with and without payloads.
+  To address these challenges, this work introduces a data-driven predictive control (DDPC) framework to synthesize walking gaits for lower-body exoskeletons. 
+  <!-- employing Hankel matrices and a state transition matrix for its data-driven model.  -->
+  The proposed approach leverages DDPC through a multi-layer architecture. 
+  At the top layer, DDPC serves as a planner employing Hankel matrices and a state transition matrix to generate a data-driven model 
+  that can learn and adapt to varying users and payloads. 
+  <!-- At the lower layer, our method incorporates inverse kinematics and passivity-based control to map the planned trajectory from DDPC  -->
+  <!-- into the full-order states of the lower-body exoskeleton.  -->
+  <!-- We validate the effectiveness of this approach through numerical simulations and hardware experiments conducted on the Atalante lower-body exoskeleton with different payloads.  -->
+  <!-- Moreover, we conducted a comparative analysis against the model predictive control (MPC) framework 
+  based on the reduced-order linear inverted pendulum (LIP) model.  -->
+  </p>
+  </div>
+  </div>
+</div>
+
 <div id="safety" id="quadrupedal robot">
   <h2>Safety-critical Control of Quadrupedal Robots with Rolling Arms<br> for Autonomous Inspection of Complex Environments</h2>
   <ul class="tags">
     <!-- <li><a href="#" class="tag">2022</a></li> -->
     <li>
-    <a href="https://arxiv.org/abs/2312.07778" class="button-4" target="blank">ARXIV</a>
-    <!-- <a href="https://doi.org/10.1109/IROS55552.2023.10342094" class="button-4" target="blank">DOI</a> -->
-    <a href="https://youtu.be/B0qhwvLzTU4" class="button-4" target="blank">VIDEO</a>
-    <a href="page_research_safety.html" class="tag">Tag: Safety Critical Control</a></li>
-    <a href="page_research_bi_quad.html" class="tag">Tag: Quadrupedal Robot</a></li>
+      <a href="https://arxiv.org/abs/2312.07778" class="button-4" target="blank">ARXIV</a>
+      <!-- <a href="https://doi.org/10.1109/IROS55552.2023.10342094" class="button-4" target="blank">DOI</a> -->
+      <a href="https://youtu.be/B0qhwvLzTU4" class="button-4" target="blank">VIDEO</a>
+      <a href="page_research_safety.html" class="tag">Tag: Safety Critical Control</a>
+      <a href="page_research_bi_quad.html" class="tag">Tag: Quadrupedal Robot</a>
+    </li>
   </ul> 
   <div class="vid-w-txt">
   <div class="vid-youtube">
@@ -36,11 +104,12 @@
   <ul class="tags">
     <!--<li><a href="#" class="tag">2022</a></li>-->
     <li>
-    <!-- <a href="https://arxiv.org/abs/2308.10962" class="button-4" target="blank">ARXIV</a> -->
-    <a href="https://doi.org/10.1109/CDC49753.2023.10383745" class="button-4" target="blank">DOI</a>
-    <a href="https://youtu.be/iKKaGNCTFIo" class="button-4" target="blank">VIDEO 1</a>
-    <a href="https://youtu.be/0-8VtTAGd2s" class="button-4" target="blank">VIDEO 2</a>
-    <a href="page_research_bi_quad.html" class="tag">Tag: Humanoid</a></li>
+      <!-- <a href="https://arxiv.org/abs/2308.10962" class="button-4" target="blank">ARXIV</a> -->
+      <a href="https://doi.org/10.1109/CDC49753.2023.10383745" class="button-4" target="blank">DOI</a>
+      <a href="https://youtu.be/iKKaGNCTFIo" class="button-4" target="blank">VIDEO 1</a>
+      <a href="https://youtu.be/0-8VtTAGd2s" class="button-4" target="blank">VIDEO 2</a>
+      <a href="page_research_bi_quad.html" class="tag">Tag: Humanoid</a>
+    </li>
   </ul>
   <div class="vid-w-txt">
   <div class="vid-youtube">
@@ -66,11 +135,12 @@
   <ul class="tags">
     <!-- <li><a href="#" class="tag">2022</a></li> -->
     <li>
-    <!-- <a href="https://arxiv.org/abs/2305.03929" class="button-4" target="blank">ARXIV</a> -->
-    <a href="https://doi.org/10.1109/IROS55552.2023.10342094" class="button-4" target="blank">DOI</a>
-    <a href="https://youtu.be/hYzaqz6y0cQ" class="button-4" target="blank">VIDEO</a>
-    <a href="page_research_safety.html" class="tag">Tag: Safety Critical Control</a></li>
-    <a href="page_research_bi_quad.html" class="tag">Tag: Quadrupedal Robot</a></li>
+      <!-- <a href="https://arxiv.org/abs/2305.03929" class="button-4" target="blank">ARXIV</a> -->
+      <a href="https://doi.org/10.1109/IROS55552.2023.10342094" class="button-4" target="blank">DOI</a>
+      <a href="https://youtu.be/hYzaqz6y0cQ" class="button-4" target="blank">VIDEO</a>
+      <a href="page_research_safety.html" class="tag">Tag: Safety Critical Control</a>
+      <a href="page_research_bi_quad.html" class="tag">Tag: Quadrupedal Robot</a>
+    </li>
   </ul> 
   <div class="vid-w-txt">
   <div class="vid-youtube">
@@ -96,9 +166,11 @@
   <h2>Distributed QP-Based Nonlinear Controllers on Legged Robots</h2>
   <ul class="tags">
     <!--<li><a href="#" class="tag">2022</a></li>-->
-    <li><a href="https://doi.org/10.1109/LCSYS.2022.3167795" class="button-4" target="blank">DOI</a>
-    <a href="https://www.youtube.com/watch?v=VoYYCZrJOps" class="button-4" target="blank">VIDEO</a>
-    <a href="page_research_bi_quad.html" class="tag">Tag: Quadrupedal Robot</a></li>
+    <li>
+      <a href="https://doi.org/10.1109/LCSYS.2022.3167795" class="button-4" target="blank">DOI</a>
+      <a href="https://www.youtube.com/watch?v=VoYYCZrJOps" class="button-4" target="blank">VIDEO</a>
+      <a href="page_research_bi_quad.html" class="tag">Tag: Quadrupedal Robot</a>
+    </li>
   </ul>
   <div class="vid-w-txt">
   <div class="vid-youtube">
@@ -124,9 +196,11 @@
   <h2>Quadrupedal Locomotion with Articulated Tails <br> <font size="-0.5" style="color:#861F41">(ASME Dynamic Systems & Control Division Rudolf Kalman Best Paper Award)</font></h2>
   <ul class="tags">
     <!-- <li><a href="#" class="tag">2021</a></li> -->
-    <li><a href="https://doi.org/10.1115/1.4049555" class="button-4" target="blank">DOI</a>
-    <a href="https://www.youtube.com/watch?v=Bi7Zec66nbA" class="button-4" target="blank">VIDEO</a>
-    <a href="page_research_bi_quad.html" class="tag">Tag: Quadrupedal Robot</a></li>
+    <li>
+      <a href="https://doi.org/10.1115/1.4049555" class="button-4" target="blank">DOI</a>
+      <a href="https://www.youtube.com/watch?v=Bi7Zec66nbA" class="button-4" target="blank">VIDEO</a>
+      <a href="page_research_bi_quad.html" class="tag">Tag: Quadrupedal Robot</a>
+    </li>
   </ul>
   <div class="vid-w-txt">
   <div class="vid-youtube">
@@ -150,10 +224,12 @@
   <h2> Hierarchical Controller for Robust Quadrupedal Locomotion</h2>
   <ul class="tags">
     <!-- <li><a href="#" class="tag">2020</a></li> -->
-    <li><a href="pub/ral_2020_arxiv_ver.pdf" class="button-4" target="blank">PDF</a>
-    <a href="https://doi.org/10.1109/LRA.2020.3001471" class="button-4" target="blank">DOI</a>
-    <a href="https://www.youtube.com/watch?v=rfuPbzmJfLM" class="button-4" target="blank">VIDEO</a>
-    <a href="page_research_bi_quad.html" class="tag">Tag: Quadrupedal Robot</a></li>
+    <li>
+      <a href="pub/ral_2020_arxiv_ver.pdf" class="button-4" target="blank">PDF</a>
+      <a href="https://doi.org/10.1109/LRA.2020.3001471" class="button-4" target="blank">DOI</a>
+      <a href="https://www.youtube.com/watch?v=rfuPbzmJfLM" class="button-4" target="blank">VIDEO</a>
+      <a href="page_research_bi_quad.html" class="tag">Tag: Quadrupedal Robot</a>
+    </li>
   </ul>
   <div class="vid-w-txt">
   <div class="vid-youtube">
@@ -180,10 +256,12 @@
   <h2>Joint Elasticity Compensation for Walking Stability</h2>
   <ul class="tags">
     <!-- <li><a href="#" class="tag">2016</a></li> -->
-    <li><a href="pub/ichr_2016.pdf" class="button-4" target="blank">PDF</a>
-    <a href="https://doi.org/10.1109/HUMANOIDS.2016.7803250" class="button-4" target="blank">DOI</a>
-    <a href="https://www.youtube.com/watch?v=oFOKdc9T78s" class="button-4" target="blank">VIDEO</a>
-    <a href="page_research_bi_quad.html" class="tag">Tag: Humanoid</a></li>
+    <li>
+      <a href="pub/ichr_2016.pdf" class="button-4" target="blank">PDF</a>
+      <a href="https://doi.org/10.1109/HUMANOIDS.2016.7803250" class="button-4" target="blank">DOI</a>
+      <a href="https://www.youtube.com/watch?v=oFOKdc9T78s" class="button-4" target="blank">VIDEO</a>
+      <a href="page_research_bi_quad.html" class="tag">Tag: Humanoid</a>
+    </li>
   </ul>
   <div class="vid-w-txt">
   <div class="vid-youtube">
