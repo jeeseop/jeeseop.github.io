@@ -443,8 +443,7 @@ table.imgtable, table.imgtable td {
 	/*border: 1px solid #111;*/
 
 .dateinfo::after{
-	/* content:"2024-03-30"; */
-	content:"10-10-2024";
+	content:"11-27-2024";
 }
 
 /*.dateinfo::before{
@@ -477,6 +476,12 @@ div.txt-next-vid{
 	min-height: 250px; 
 	height: auto;
 }
+
+div.content-container {
+	display: flex;
+	align-items: flex-start;
+	gap: 45px;
+  }
 
 
 /* added css for tagging */
